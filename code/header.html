@@ -1,0 +1,52 @@
+<title>IITK No Dues</title>
+<table id = 'header'>
+<tr>
+<head>
+<td id='logo'>
+    <img src='static/img/iitklogo.png' style='height: 5em; width:auto;'></img>
+</td>
+<td id = 'heading'>
+<span style='font-size:300%'>
+IITK No Dues</span><br>
+[<a href="dash.php">Home</a>]
+</td>
+<td id = 'logo' align='right'>
+Welcome <?php echo $_SESSION['id'];?> (<a href='logout.php'>Logout</a>)<br>
+Mode: <?php echo $_SESSION['mode'];?>
+</td>
+</table>
+</tr>
+</head>
+<div style="height: 8em"></div>
+<style>
+
+body{
+    margin: 0;
+    font-family:'Dosis','serif';
+}
+
+#heading{
+    text-align: center;
+    width: 40%;
+}
+
+#logo{
+    width: 30%;
+}
+
+#header{
+    padding: 10px;
+    margin: 0 0 0 0;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    color: white;
+}
+
+#content{
+    width: 80%;
+    margin: 0 auto;
+}	
+</style>
+
+<div id = 'content'>
